@@ -8,20 +8,10 @@
   </head>
 
   <body>
-    <div onclick="conect()">EstÃ¡ conectado con el servidor</div>
-  </body>
-</html>
-PS C:\Users\Lenovo\pweb2\LAB03\resueltos\resuelto1> cat .\index1.html
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <title>Laboratorio 3</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="/script.js"></script>
-  </head>
-
-  <body>
-    <div id="htmlCode" onclick="#"></div>
+  <div id="htmlCode"></div>
+    <form id="markupForm">
+      <textarea id="markupText"></textarea>
+      <input type="submit" value="Enviar" onclick="recitar(document.getElementById('markupText').value)">
+    </form>
   </body>
 </html>
